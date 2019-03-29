@@ -13,6 +13,6 @@ export class AboutPage {
   }
   findMember(){
     console.log(this.data.keyword);
-    this.navCtrl.push(ResultPage, {keyword:this.data.keyword});
+    this.navCtrl.push(ResultPage,{keyword:this.data.keyword});
   }
 }
