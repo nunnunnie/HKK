@@ -1,0 +1,44 @@
+<!--
+  Generated template for the NewmemberPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>New Member</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <form (ngSubmit) = "newmember()">
+      <ion-list>
+          <ion-item>
+              <ion-label floating>ชื่อสมาชิก</ion-label>
+              <ion-input type="text" NameMem="NameMem" (ngModel)="member.NameMem"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label floating>รหัสสมาชิก</ion-label>
+              <ion-input type="text" PassMem="PassMem" (ngModel)="member.PassMem"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label floating>ชื่อเล่นสมาชิก</ion-label>
+              <ion-input type="text" NicknameMem="NicknameMem" (ngModel)="member.NicknameMem"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label floating>อีเมล์สมาชิก</ion-label>
+              <ion-input type="text" EmailMem="EmailMem" (ngModel)="member.EmailMem"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label floating>เบอร์สมาชิก</ion-label>
+              <ion-input type="text" TelMem="TelMem" (ngModel)="member.TelMem"></ion-input>
+          </ion-item>
+          <button ion-button block>SAVE</button>
+      </ion-list>
+
+    </form>
+
+</ion-content>

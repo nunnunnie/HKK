@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { DetailPage } from '../detail/detail';
+import { NewmemberPage } from '../newmember/newmember';
 
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -20,5 +21,10 @@ export class HomePage {
   }
   showDetail(id){
     this.navCtrl.push(DetailPage,{IDMem: id});
+
+    
+  }
+  showNewmember(){
+    this.navCtrl.push(NewmemberPage);
   }
 }

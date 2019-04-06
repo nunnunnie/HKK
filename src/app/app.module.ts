@@ -9,10 +9,12 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DetailPage } from '../pages/detail/detail';
 import { ResultPage } from '../pages/result/result';
+import { NewmemberPage } from '../pages/newmember/newmember';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
+import { HTTP } from '@ionic-native/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { HttpModule } from '@angular/http';
     HomePage,
     DetailPage,
     ResultPage,
+    NewmemberPage,
     TabsPage
   ],
   imports: [
@@ -38,11 +41,13 @@ import { HttpModule } from '@angular/http';
     HomePage,
     DetailPage,
     ResultPage,
+    NewmemberPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    HTTP,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
