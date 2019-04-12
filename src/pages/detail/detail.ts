@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+
 /**
  * Generated class for the DetailPage page.
  *
@@ -18,6 +19,7 @@ import 'rxjs/add/operator/map';
 })
 export class DetailPage {
   member:any=0;
+  data:any=0;
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     let IDMem=this.navParams.get('IDMem');
     let url= "http://localhost:8080/member/" + IDMem;
@@ -32,5 +34,7 @@ export class DetailPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailPage');
   }
+
+
 
 }

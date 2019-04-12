@@ -5,13 +5,18 @@
 </ion-header>
 
 <ion-content padding>
-    <button ion-button (click)="showNewmember()">ADD</button>
+    <ion-fab right bottom>
+        <button ion-fab mini (click)="showNewmember()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-fab>
   <ion-list>
       <ion-item *ngFor="let p of member">
           <h2>{{p.NameMem}}</h2>
           <p>{{p.PassMem}}</p>
           <button ion-button clear item-end (click)= "showDetail(p.IDMem)">view</button>
-
-        </ion-item>
+          <button ion-button clear item-end (click)= "deleteDetail(p.IDMem)">Delete</button>
+          <button ion-button clear item-end (click)="editDetail(p.IDMem)">Edit</button>
+      </ion-item>
   </ion-list>
 </ion-content>

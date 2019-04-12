@@ -10,11 +10,13 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { DetailPage } from '../pages/detail/detail';
 import { ResultPage } from '../pages/result/result';
 import { NewmemberPage } from '../pages/newmember/newmember';
+import { EditmemberPage } from '../pages/editmember/editmember';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
 import { HTTP } from '@ionic-native/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { HTTP } from '@ionic-native/http';
     DetailPage,
     ResultPage,
     NewmemberPage,
-    TabsPage
+    TabsPage,
+    EditmemberPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
 
   ],
@@ -42,7 +46,8 @@ import { HTTP } from '@ionic-native/http';
     DetailPage,
     ResultPage,
     NewmemberPage,
-    TabsPage
+    TabsPage,
+    EditmemberPage
   ],
   providers: [
     StatusBar,
