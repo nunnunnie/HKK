@@ -31,8 +31,6 @@ export class NewmemberPage {
     private alertCtrl: AlertController) {
 
   }
-   
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewmemberPage');
   }
