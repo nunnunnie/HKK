@@ -11,12 +11,20 @@ import { DetailPage } from '../pages/detail/detail';
 import { ResultPage } from '../pages/result/result';
 import { NewmemberPage } from '../pages/newmember/newmember';
 import { EditmemberPage } from '../pages/editmember/editmember';
+import { HomehPage } from '../pages/homeh/homeh';
+import { HongkwamkitPage } from '../pages/hongkwamkit/hongkwamkit';
+import { DetailhongPage } from '../pages/detailhong/detailhong';
+import { EdithongPage } from '../pages/edithong/edithong';
+import { NewactivityPage } from '../pages/newactivity/newactivity';
+import { TopicPage } from '../pages/topic/topic';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
 import { HTTP } from '@ionic-native/http';
 import { HttpClientModule } from '@angular/common/http';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -28,13 +36,20 @@ import { HttpClientModule } from '@angular/common/http';
     ResultPage,
     NewmemberPage,
     TabsPage,
-    EditmemberPage
+    EditmemberPage,
+    HomehPage,
+    HongkwamkitPage,
+    DetailhongPage,
+    EdithongPage,
+    NewactivityPage,
+    TopicPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
 
   ],
   bootstrap: [IonicApp],
@@ -47,7 +62,13 @@ import { HttpClientModule } from '@angular/common/http';
     ResultPage,
     NewmemberPage,
     TabsPage,
-    EditmemberPage
+    EditmemberPage,
+    HomehPage,
+    HongkwamkitPage,
+    DetailhongPage,
+    EdithongPage,
+    NewactivityPage,
+    TopicPage
   ],
   providers: [
     StatusBar,
